@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal"><Font ss:FontName="Calibri" ss:Size="11"/></Style>
+  <Style ss:ID="Header"><Font ss:Bold="1" ss:Color="#FFFFFF"/><Interior ss:Color="#1F4E78" ss:Pattern="Solid"/><Alignment ss:Horizontal="Center" ss:WrapText="1"/></Style>
+  <Style ss:ID="Title"><Font ss:Bold="1" ss:Size="16" ss:Color="#FFFFFF"/><Interior ss:Color="#17365D" ss:Pattern="Solid"/></Style>
+  <Style ss:ID="Percent"><NumberFormat ss:Format="0%"/></Style>
+  <Style ss:ID="Date"><NumberFormat ss:Format="dd/mm/yyyy"/></Style>
+  <Style ss:ID="Kpi"><Font ss:Bold="1" ss:Size="14" ss:Color="#1F1F1F"/><Interior ss:Color="#D9EAF7" ss:Pattern="Solid"/></Style>
+ </Styles>
+ <Worksheet ss:Name="Suivi">
+  <Table>
+   <Column ss:Width="110"/><Column ss:Width="90"/><Column ss:Width="90"/><Column ss:Width="90"/><Column ss:Width="90"/><Column ss:Width="85"/><Column ss:Width="85"/><Column ss:Width="85"/><Column ss:Width="95"/><Column ss:Width="75"/><Column ss:Width="95"/><Column ss:Width="220"/><Column ss:Width="180"/>
+   <Row ss:StyleID="Header"><Cell><Data ss:Type="String">Projet</Data></Cell><Cell><Data ss:Type="String">Usine</Data></Cell><Cell><Data ss:Type="String">N° article</Data></Cell><Cell><Data ss:Type="String">Statut</Data></Cell><Cell><Data ss:Type="String">Avancement (%)</Data></Cell><Cell><Data ss:Type="String">Date de début</Data></Cell><Cell><Data ss:Type="String">Date de fin</Data></Cell><Cell><Data ss:Type="String">Jours restants</Data></Cell><Cell><Data ss:Type="String">Date d'envoi email</Data></Cell><Cell><Data ss:Type="String">Email envoyé</Data></Cell><Cell><Data ss:Type="String">Alerte</Data></Cell><Cell><Data ss:Type="String">Remarques</Data></Cell><Cell><Data ss:Type="String">Email destinataire</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Projet Alpha</Data></Cell><Cell><Data ss:Type="String">Usine 1</Data></Cell><Cell><Data ss:Type="String">ART-001</Data></Cell><Cell><Data ss:Type="String">En cours</Data></Cell><Cell ss:StyleID="Percent"><Data ss:Type="Number">0.6</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-01T00:00:00.000</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-15T00:00:00.000</Data></Cell><Cell ss:Formula="=RC[-1]-TODAY()"><Data ss:Type="Number">0</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-05T00:00:00.000</Data></Cell><Cell><Data ss:Type="String">Non</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">Pièce en cours de fabrication</Data></Cell><Cell><Data ss:Type="String">chef.alpha@entreprise.com</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Projet Alpha</Data></Cell><Cell><Data ss:Type="String">Usine 2</Data></Cell><Cell><Data ss:Type="String">ART-002</Data></Cell><Cell><Data ss:Type="String">Terminé</Data></Cell><Cell ss:StyleID="Percent"><Data ss:Type="Number">1</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-08-01T00:00:00.000</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-08-10T00:00:00.000</Data></Cell><Cell><Data ss:Type="Number">0</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-08-02T00:00:00.000</Data></Cell><Cell><Data ss:Type="String">Oui</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">Validation terminée</Data></Cell><Cell><Data ss:Type="String">chef.alpha@entreprise.com</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Projet Beta</Data></Cell><Cell><Data ss:Type="String">Usine 1</Data></Cell><Cell><Data ss:Type="String">ART-003</Data></Cell><Cell><Data ss:Type="String">En attente</Data></Cell><Cell ss:StyleID="Percent"><Data ss:Type="Number">0.1</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-15T00:00:00.000</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-30T00:00:00.000</Data></Cell><Cell ss:Formula="=RC[-1]-TODAY()"><Data ss:Type="Number">0</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-08T00:00:00.000</Data></Cell><Cell><Data ss:Type="String">Non</Data></Cell><Cell><Data ss:Type="String">🟡 EMAIL</Data></Cell><Cell><Data ss:Type="String">À confirmer avec le service</Data></Cell><Cell><Data ss:Type="String">chef.beta@entreprise.com</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Projet Gamma</Data></Cell><Cell><Data ss:Type="String">Usine 3</Data></Cell><Cell><Data ss:Type="String">ART-004</Data></Cell><Cell><Data ss:Type="String">En retard</Data></Cell><Cell ss:StyleID="Percent"><Data ss:Type="Number">0.45</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-01T00:00:00.000</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-20T00:00:00.000</Data></Cell><Cell><Data ss:Type="Number">-10</Data></Cell><Cell ss:StyleID="Date"><Data ss:Type="DateTime">2026-09-04T00:00:00.000</Data></Cell><Cell><Data ss:Type="String">Non</Data></Cell><Cell><Data ss:Type="String">🔴 RETARD</Data></Cell><Cell><Data ss:Type="String">Retard dû à la disponibilité des matières</Data></Cell><Cell><Data ss:Type="String">chef.gamma@entreprise.com</Data></Cell></Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel"><FreezePanes/><FrozenNoSplit/><SplitHorizontal>1</SplitHorizontal><TopRowBottomPane>1</TopRowBottomPane><AutoFilter x:Range="R1C1:R1000C13"/></WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Dashboard">
+  <Table>
+   <Column ss:Width="220"/><Column ss:Width="130"/>
+   <Row ss:StyleID="Title"><Cell><Data ss:Type="String">TABLEAU DE BORD - SUIVI DE TRAVAIL</Data></Cell></Row>
+   <Row/><Row><Cell ss:StyleID="Header"><Data ss:Type="String">Indicateur</Data></Cell><Cell ss:StyleID="Header"><Data ss:Type="String">Valeur</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Total travaux</Data></Cell><Cell ss:StyleID="Kpi" ss:Formula="=COUNTA(Suivi!R2C1:R1000C1)"><Data ss:Type="Number">4</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">En cours</Data></Cell><Cell ss:StyleID="Kpi" ss:Formula="=COUNTIF(Suivi!R2C4:R1000C4,\"En cours\")"><Data ss:Type="Number">1</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Terminé</Data></Cell><Cell ss:StyleID="Kpi" ss:Formula="=COUNTIF(Suivi!R2C4:R1000C4,\"Terminé\")"><Data ss:Type="Number">1</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">En retard</Data></Cell><Cell ss:StyleID="Kpi" ss:Formula="=COUNTIF(Suivi!R2C4:R1000C4,\"En retard\")"><Data ss:Type="Number">1</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Avancement moyen</Data></Cell><Cell ss:StyleID="Kpi" ss:Formula="=AVERAGE(Suivi!R2C5:R1000C5)"><Data ss:Type="Number">0.5375</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Alertes à traiter</Data></Cell><Cell ss:StyleID="Kpi"><Data ss:Type="Number">2</Data></Cell></Row>
+  </Table>
+ </Worksheet>
+ <Worksheet ss:Name="Donnees">
+  <Table><Row ss:StyleID="Header"><Cell><Data ss:Type="String">Statuts</Data></Cell><Cell><Data ss:Type="String">Usines</Data></Cell><Cell><Data ss:Type="String">Email par défaut</Data></Cell></Row><Row><Cell><Data ss:Type="String">En attente</Data></Cell><Cell><Data ss:Type="String">Usine 1</Data></Cell><Cell><Data ss:Type="String">equipe@entreprise.com</Data></Cell></Row><Row><Cell><Data ss:Type="String">En cours</Data></Cell><Cell><Data ss:Type="String">Usine 2</Data></Cell></Row><Row><Cell><Data ss:Type="String">En retard</Data></Cell><Cell><Data ss:Type="String">Usine 3</Data></Cell></Row><Row><Cell><Data ss:Type="String">Terminé</Data></Cell><Cell><Data ss:Type="String">Usine 4</Data></Cell></Row><Row><Cell><Data ss:Type="String">Validé</Data></Cell></Row></Table>
+ </Worksheet>
+</Workbook>
