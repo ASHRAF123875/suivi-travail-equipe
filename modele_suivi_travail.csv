@@ -1,0 +1,8 @@
+Projet,Usine,N° article,Statut,Avancement,Date de début,Date de fin,Date d'envoi email,Remarques
+Projet Alpha,Usine 1,ART-001,En cours,60%,01/09/2026,15/09/2026,05/09/2026,Pièce en cours de fabrication
+Projet Alpha,Usine 2,ART-002,Terminé,100%,01/08/2026,10/08/2026,02/08/2026,Validation terminée
+Projet Beta,Usine 1,ART-003,En attente,10%,15/09/2026,30/09/2026,,À confirmer avec le service
+Projet Gamma,Usine 3,ART-004,En retard,45%,01/09/2026,20/09/2026,04/09/2026,Retard dû à la disponibilité des matières
+Projet Delta,Usine 2,ART-005,En cours,80%,05/09/2026,18/09/2026,06/09/2026,Contrôle qualité en cours
+Projet Delta,Usine 1,ART-006,Terminé,100%,20/08/2026,29/08/2026,21/08/2026,Livraison effectuée
+Projet Epsilon,Usine 4,ART-007,En cours,30%,12/09/2026,25/09/2026,08/09/2026,Révision des planches à revoir
